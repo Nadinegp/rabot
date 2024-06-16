@@ -5,90 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot-mode-page.css">
 </head>
 <body>
-    <div class="chatbot-container">
-        <!-- Chatbot Section -->
-        <div id="chatbot">
-            <div id="conversation">
-                <div class="chatbot-message">
-                    <p class="chatbot-text">Hi! 👋 Ask the pharaoh!</p>
-                </div>
+    <!-- Grid Container -->
+    <div class="grid-container">
+        <!-- Header Section -->
+        <header class="navbar-style-3">
+            <div class="navbar-toggler">
+                <div class="navbar-toggler-icon"></div>
             </div>
-            <form id="input-form">
-                <message-container>
-                    <input id="input-field" type="text" placeholder="Type your message here">
-                    <button id="submit-button" type="submit">
-                        <img class="send-icon" src="send-message.png" alt="">
-                    </button>
-                </message-container>
-            </form>
-        </div>  
-        <!-- End of Chatbot Section -->
-
-        <!-- Rest of Your Page Content -->
-        <div class="chatbotmode-page">
-            <img class="background-icon" alt="" src="/content/rabot/public/background2x.png" />
-
-            <div class="navbar-style-3">
-                <div class="navbar-toggler">
-                    <div class="navbar-toggler-icon"></div>
-                </div>
-                <div class="collapse-navbar-collapse">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <img
-                                class="input-group-prepend-icon"
-                                alt=""
-                                src="/content/rabot/public/inputgroupprepend.svg"
-                            />
-
-                            <div class="form-control">
-                                <div class="search">Search</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="navbar-nav">
-                    <div class="li" id="liContainer">
-                        <div class="a">
-                            <div class="link">Home</div>
-                        </div>
-                    </div>
-                    <div class="li1">
-                        <div class="a">
-                            <div class="link">About</div>
-                        </div>
-                    </div>
-                    <div class="navbar-nav-child"></div>
-                    <div class="li2" id="liContainer2">
-                        <div class="a">
-                            <div class="link">Exhibits</div>
-                        </div>
-                    </div>
-                    <div class="li3" id="liContainer3">
-                        <div class="a">
-                            <div class="link">Ra'bot</div>
-                        </div>
-                    </div>
-                    <div class="li4">
-                        <div class="a4" id="aContainer">
-                            <div class="link">Entertainment</div>
-                        </div>
-                    </div>
-                    <div class="li5" id="liContainer5">
-                        <div class="a">
-                            <div class="link">Contact</div>
+            <div class="collapse-navbar-collapse">
+                <div class="form-group">
+                    <div class="input-group">
+                        <img class="input-group-prepend-icon" alt="" src="/rabot/public/inputgroupprepend.svg" />
+                        <div class="form-control">
+                            <div class="search">Search</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <img class="logo-1-icon" alt="" src="/content/rabot/public/logo-12x.png" />
+            <div class="navbar-nav">
+                <div class="li" id="liContainer">
+                    <div class="a">
+                        <div class="link">Home</div>
+                    </div>
+                </div>
+                <div class="li1">
+                    <div class="a">
+                        <div class="link">About</div>
+                    </div>
+                </div>
+                <div class="navbar-nav-child"></div>
+                <div class="li2" id="liContainer2">
+                    <div class="a">
+                        <div class="link">Exhibits</div>
+                    </div>
+                </div>
+                <div class="li3" id="liContainer3">
+                    <div class="a">
+                        <div class="link">Ra'bot</div>
+                    </div>
+                </div>
+                <div class="li4">
+                    <div class="a4" id="aContainer">
+                        <div class="link">Entertainment</div>
+                    </div>
+                </div>
+                <div class="li5" id="liContainer5">
+                    <div class="a">
+                        <div class="link">Contact</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Background Image -->
+        <div class="background-container">
+            <img class="background-icon" alt="" src="/rabot/public/background2x.png" />
         </div>
-    <!-- Chatbot JavaScript -->
-    <script src="/content/rabot/chatbot.js"></script>
 
+        <!-- Chatbot Section -->
+        <div class="chatbot-container">
+            <div id="chatbot">
+                <div id="conversation">
+                    <div class="chatbot-message">
+                        <p class="chatbot-text">Hi! 👋 Ask the pharaoh!</p>
+                    </div>
+                </div>
+                <form id="input-form">
+                    <message-container>
+                        <input id="input-field" type="text" placeholder="Type your message here">
+                        <button id="submit-button" type="submit">
+                            <img class="send-icon" src="send-message.png" alt="">
+                        </button>
+                    </message-container>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot JavaScript -->
+    <script src="/rabot/chatbot.js"></script>
     <script>
         // Function to handle form submission and update chat window
         document.getElementById("input-form").addEventListener("submit", function(event) {
@@ -100,7 +98,7 @@
                 let conversation = document.getElementById("conversation");
                 let newMessage = document.createElement("div");
                 newMessage.classList.add("user-message");
-                newMessage.innerHTML = <p class="user-text">${message}</p>;
+                newMessage.innerHTML = `<p class="user-text">${message}</p>`;
                 conversation.appendChild(newMessage);
 
                 // Clear input field after submission
@@ -110,11 +108,6 @@
                 conversation.scrollTop = conversation.scrollHeight;
             }
         });
-    </script>        <!-- End of Script for Navigation -->
-
-    </div>
-
-    <!-- Chatbot JavaScript -->
-    <script src="chatbot.js"></script>
+    </script>
 </body>
 </html>
