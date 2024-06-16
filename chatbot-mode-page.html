@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./chatbot-mode-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cagliostro:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="chatbotmode-page">
+      <img class="background-icon" alt="" src="/content/GEM/public/background2x.png" />
+
+      <div class="navbar-style-3">
+        <div class="navbar-toggler">
+          <div class="navbar-toggler-icon"></div>
+        </div>
+        <div class="collapse-navbar-collapse">
+          <div class="form-group">
+            <div class="input-group">
+              <img
+                class="input-group-prepend-icon"
+                alt=""
+                src="/content/GEM/public/inputgroupprepend.svg"
+              />
+
+              <div class="form-control">
+                <div class="search">Search</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <div class="li" id="liContainer">
+            <div class="a">
+              <div class="link">Home</div>
+            </div>
+          </div>
+          <div class="li1">
+            <div class="a">
+              <div class="link">About</div>
+            </div>
+          </div>
+          <div class="navbar-nav-child"></div>
+          <div class="li2" id="liContainer2">
+            <div class="a">
+              <div class="link">Exhibits</div>
+            </div>
+          </div>
+          <div class="li3" id="liContainer3">
+            <div class="a">
+              <div class="link">Ra'bot</div>
+            </div>
+          </div>
+          <div class="li4">
+            <div class="a4" id="aContainer">
+              <div class="link">Entertainment</div>
+            </div>
+          </div>
+          <div class="li5" id="liContainer5">
+            <div class="a">
+              <div class="link">Contact</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="logo-1-icon" alt="" src="/content/GEM/public/logo-12x.png" />
+    </div>
+
+    <script>
+      var liContainer = document.getElementById("liContainer");
+      if (liContainer) {
+        liContainer.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+
+      var linkText = document.getElementById("linkText");
+      if (linkText) {
+        linkText.addEventListener("click", function (e) {
+          window.location.href = "./about-page.html";
+        });
+      }
+      
+      var liContainer2 = document.getElementById("liContainer2");
+      if (liContainer2) {
+        liContainer2.addEventListener("click", function (e) {
+          window.location.href = "./exhibits-page.html";
+        });
+      }
+      
+      var liContainer3 = document.getElementById("liContainer3");
+      if (liContainer3) {
+        liContainer3.addEventListener("click", function (e) {
+          window.location.href = "./rabot-page.html";
+        });
+      }
+      
+      var aContainer = document.getElementById("aContainer");
+      if (aContainer) {
+        aContainer.addEventListener("click", function (e) {
+          window.location.href = "./nearby-ent-page.html";
+        });
+      }
+      
+      var liContainer5 = document.getElementById("liContainer5");
+      if (liContainer5) {
+        liContainer5.addEventListener("click", function (e) {
+          window.location.href = "./contact-page-page.html";
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./about-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gilda Display:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cagliostro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="about-page">
+      <img class="background-icon1" alt="" src="/content/GEM/public/background2x.png" />
+
+      <div class="navbar-style-31">
+        <div class="navbar-toggler1">
+          <div class="navbar-toggler-icon1"></div>
+        </div>
+        <div class="collapse-navbar-collapse1">
+          <div class="form-group1">
+            <div class="input-group1">
+              <img
+                class="input-group-prepend-icon1"
+                alt=""
+                src="/content/GEM/public/inputgroupprepend.svg"
+              />
+
+              <div class="form-control1">
+                <div class="search1">Search</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-nav1">
+          <div class="li6" id="liContainer">
+            <div class="a6">
+              <div class="link6">Home</div>
+            </div>
+          </div>
+          <div class="li7">
+            <div class="a6">
+              <div class="link6">About</div>
+            </div>
+          </div>
+          <div class="li8" id="liContainer2">
+            <div class="a6">
+              <div class="link6">Exhibits</div>
+            </div>
+          </div>
+          <div class="li9" id="liContainer3">
+            <div class="a6">
+              <div class="link6">Ra'bot</div>
+            </div>
+          </div>
+          <div class="li10">
+            <div class="a10" id="aContainer">
+              <div class="link6">Entertainment</div>
+            </div>
+          </div>
+          <div class="li11" id="liContainer5">
+            <div class="a6">
+              <div class="link6">Contact</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="logo-1-icon1" alt="" src="/content/GEM/public/logo-12x.png" />
+
+      <div class="form-card-1">
+        <img class="media-icon" alt="" src="/content/GEM/public/media2x.png" />
+      </div>
+      <div class="about-page-child"></div>
+      <div class="the-grand-egyptian1">
+        The Grand Egyptian Museum (GEM) is under construction near the Pyramids
+        of Giza. Designed by Heneghan Peng Architects, it will be the world's
+        largest archaeological museum complex. The opening was delayed due to
+        environmental, financial and political reasons, but is now expected for
+        mid-2024. The GEM will house over 100,000 artifacts, including King
+        Tut's entire treasure collection.
+      </div>
+      <div class="h31">About</div>
+      <div class="opening-hours-sunday-container">
+        <p class="opening-hours">Opening Hours</p>
+        <ul class="sunday-to-thursday-9-am-9-p">
+          <li class="sunday-to-thursday-9-am-9-p1">
+            <span>Sunday to Thursday: 9 AM - 9 PM</span>
+          </li>
+          <li>
+            <span>Friday and Saturday: 9 AM - 10 PM</span>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-lg-11" id="btnLg1Container">
+        <div class="h32">Book your Visit</div>
+      </div>
+    </div>
+
+    <script>
+      var liContainer = document.getElementById("liContainer");
+      if (liContainer) {
+        liContainer.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var liContainer2 = document.getElementById("liContainer2");
+      if (liContainer2) {
+        liContainer2.addEventListener("click", function (e) {
+          window.location.href = "./exhibits-page.html";
+        });
+      }
+      
+      var liContainer3 = document.getElementById("liContainer3");
+      if (liContainer3) {
+        liContainer3.addEventListener("click", function (e) {
+          window.location.href = "./rabot-page.html";
+        });
+      }
+      
+      var aContainer = document.getElementById("aContainer");
+      if (aContainer) {
+        aContainer.addEventListener("click", function (e) {
+          window.location.href = "./nearby-ent-page.html";
+        });
+      }
+      
+      var liContainer5 = document.getElementById("liContainer5");
+      if (liContainer5) {
+        liContainer5.addEventListener("click", function (e) {
+          window.location.href = "./contact-page-page.html";
+        });
+      }
+      
+      var btnLg1Container = document.getElementById("btnLg1Container");
+      if (btnLg1Container) {
+        btnLg1Container.addEventListener("click", function (e) {
+          window.location.href = "./booking-page.html";
+        });
+      }
+      </script>
+  </body>
+</html>

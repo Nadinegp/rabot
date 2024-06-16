@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./exhibits-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gilda Display:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cagliostro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="exhibits-page">
+      <img class="background-icon4" alt="" src="/content/GEM/public/background2x.png" />
+
+      <div class="navbar-style-34">
+        <div class="navbar-toggler4">
+          <div class="navbar-toggler-icon4"></div>
+        </div>
+        <div class="collapse-navbar-collapse4">
+          <div class="form-group4">
+            <div class="input-group4">
+              <img
+                class="input-group-prepend-icon4"
+                alt=""
+                src="/content/GEM/public/inputgroupprepend.svg"
+              />
+
+              <div class="form-control4">
+                <div class="search4">Search</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-nav4">
+          <div class="li24" id="liContainer">
+            <div class="a24">
+              <div class="link24">Home</div>
+            </div>
+          </div>
+          <div class="li25" id="liContainer1">
+            <div class="a24">
+              <div class="link24">About</div>
+            </div>
+          </div>
+          <div class="li26" id="liContainer2">
+            <div class="a24">
+              <div class="link24">Exhibits</div>
+            </div>
+          </div>
+          <div class="li27" id="liContainer3">
+            <div class="a24">
+              <div class="link24">Ra'bot</div>
+            </div>
+          </div>
+          <div class="li28">
+            <div class="a28" id="aContainer">
+              <div class="link24">Entertainment</div>
+            </div>
+          </div>
+          <div class="li29" id="liContainer5">
+            <div class="a24">
+              <div class="link24">Contact</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="logo-1-icon4" alt="" src="/content/GEM/public/logo-12x.png" />
+
+      <div class="form-card-12">
+        <img class="media-icon2" alt="" src="/content/GEM/public/media12x.png" />
+      </div>
+      <img
+        class="tut-banner-1-icon"
+        alt=""
+        src="/content/GEM/public/tutbanner-12x.png"
+        id="tutBanner1Image"
+      />
+
+      <img
+        class="child-banner-1-icon"
+        alt=""
+        src="/content/GEM/public/childbanner-12x.png"
+        id="childBanner1Image"
+      />
+    </div>
+
+    <script>
+      var liContainer = document.getElementById("liContainer");
+      if (liContainer) {
+        liContainer.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var liContainer1 = document.getElementById("liContainer1");
+      if (liContainer1) {
+        liContainer1.addEventListener("click", function (e) {
+          window.location.href = "./about-page.html";
+        });
+      }
+      
+      var liContainer2 = document.getElementById("liContainer2");
+      if (liContainer2) {
+        liContainer2.addEventListener("click", function (e) {
+          window.location.href = "./exhibits-page.html";
+        });
+      }
+      
+      var liContainer3 = document.getElementById("liContainer3");
+      if (liContainer3) {
+        liContainer3.addEventListener("click", function (e) {
+          window.location.href = "./rabot-page.html";
+        });
+      }
+      
+      var aContainer = document.getElementById("aContainer");
+      if (aContainer) {
+        aContainer.addEventListener("click", function (e) {
+          window.location.href = "./nearby-ent-page.html";
+        });
+      }
+      
+      var liContainer5 = document.getElementById("liContainer5");
+      if (liContainer5) {
+        liContainer5.addEventListener("click", function (e) {
+          window.location.href = "./contact-page-page.html";
+        });
+      }
+      
+      var tutBanner1Image = document.getElementById("tutBanner1Image");
+      if (tutBanner1Image) {
+        tutBanner1Image.addEventListener("click", function (e) {
+          window.location.href = "./booking-page.html";
+        });
+      }
+      
+      var childBanner1Image = document.getElementById("childBanner1Image");
+      if (childBanner1Image) {
+        childBanner1Image.addEventListener("click", function (e) {
+          window.location.href = "./booking-page.html";
+        });
+      }
+      </script>
+  </body>
+</html>

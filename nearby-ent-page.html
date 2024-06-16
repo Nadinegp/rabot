@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./nearby-ent-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gilda Display:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cagliostro:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="nearby-ent-page">
+      <img class="background-icon3" alt="" src="/content/GEM/public/background2x.png" />
+
+      <div class="navbar-style-33">
+        <div class="navbar-toggler3">
+          <div class="navbar-toggler-icon3"></div>
+        </div>
+        <div class="collapse-navbar-collapse3">
+          <div class="form-group3">
+            <div class="input-group3">
+              <img
+                class="input-group-prepend-icon3"
+                alt=""
+                src="/content/GEM/public/inputgroupprepend.svg"
+              />
+
+              <div class="form-control3">
+                <div class="search3">Search</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-nav3">
+          <div class="li18" id="liContainer">
+            <div class="a18">
+              <div class="link18">Home</div>
+            </div>
+          </div>
+          <div class="li19" id="liContainer1">
+            <div class="a18">
+              <div class="link18">About</div>
+            </div>
+          </div>
+          <div class="li20" id="liContainer2">
+            <div class="a18">
+              <div class="link18">Exhibits</div>
+            </div>
+          </div>
+          <div class="li21" id="liContainer3">
+            <div class="a18">
+              <div class="link18">Ra'bot</div>
+            </div>
+          </div>
+          <div class="li22">
+            <div class="a22" id="aContainer">
+              <div class="link18">Entertainment</div>
+            </div>
+          </div>
+          <div class="li23" id="liContainer5">
+            <div class="a18">
+              <div class="link18">Contact</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="logo-1-icon3" alt="" src="/content/GEM/public/logo-12x.png" />
+
+      <div class="form-card-11">
+        <img class="media-icon1" alt="" src="/content/GEM/public/media2x.png" />
+      </div>
+      <div class="nearby-entertainment">Nearby Entertainment</div>
+      <div class="restaurants">Restaurants</div>
+      <div class="nearby-ent-page-child"></div>
+      <div class="kasr-al-kababgi-zooba-container">
+        <ul class="kasr-al-kababgi-zooba-bittersw">
+          <li class="kasr-al-kababgi">Kasr Al-Kababgi</li>
+          <li class="kasr-al-kababgi">Zooba</li>
+          <li class="kasr-al-kababgi">Bittersweet</li>
+        </ul>
+      </div>
+      <div class="nearby-ent-page-item"></div>
+      <div class="cafe-dessert">Cafe & Dessert</div>
+      <div class="dolato-gelateria-beanos-container">
+        <ul class="kasr-al-kababgi-zooba-bittersw">
+          <li class="kasr-al-kababgi">Dolato Gelateria</li>
+          <li class="kasr-al-kababgi">Beano’s</li>
+          <li class="kasr-al-kababgi">30 North</li>
+        </ul>
+      </div>
+      <div class="nearby-ent-page-inner"></div>
+      <div class="shopping">Shopping</div>
+      <div class="okhtein-nuniz-nefertari-container">
+        <ul class="kasr-al-kababgi-zooba-bittersw">
+          <li class="kasr-al-kababgi">Okhtein</li>
+          <li class="kasr-al-kababgi">Nuniz</li>
+          <li class="kasr-al-kababgi">Nefertari</li>
+          <li class="kasr-al-kababgi">GEM Official Shop</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      var liContainer = document.getElementById("liContainer");
+      if (liContainer) {
+        liContainer.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var liContainer1 = document.getElementById("liContainer1");
+      if (liContainer1) {
+        liContainer1.addEventListener("click", function (e) {
+          window.location.href = "./about-page.html";
+        });
+      }
+      
+      var liContainer2 = document.getElementById("liContainer2");
+      if (liContainer2) {
+        liContainer2.addEventListener("click", function (e) {
+          window.location.href = "./exhibits-page.html";
+        });
+      }
+      
+      var liContainer3 = document.getElementById("liContainer3");
+      if (liContainer3) {
+        liContainer3.addEventListener("click", function (e) {
+          window.location.href = "./rabot-page.html";
+        });
+      }
+      
+      var aContainer = document.getElementById("aContainer");
+      if (aContainer) {
+        aContainer.addEventListener("click", function (e) {
+          window.location.href = "./nearby-ent-page.html";
+        });
+      }
+      
+      var liContainer5 = document.getElementById("liContainer5");
+      if (liContainer5) {
+        liContainer5.addEventListener("click", function (e) {
+          window.location.href = "./contact-page-page.html";
+        });
+      }
+      </script>
+  </body>
+</html>
