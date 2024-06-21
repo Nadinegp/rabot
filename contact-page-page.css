@@ -217,6 +217,10 @@
   right: 28.13%;
   left: 69.03%;
 }
+#txtarea{
+     border: none;
+     outline: none;
+}
 .email3 {
   position: absolute;
   top: calc(50% - 14px);
