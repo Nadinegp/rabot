@@ -190,8 +190,8 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.nearby-entertainment,
-.restaurants {
+.nearby-entertainment
+ {
   position: absolute;
   letter-spacing: 0.1px;
   line-height: 32px;
@@ -205,17 +205,13 @@
   left: calc(50% - 170px);
   color: var(--color-black);
 }
-.restaurants {
-  top: 346px;
-  left: 324px;
-}
 .nearby-ent-page-child {
   position: absolute;
   top: 398px;
-  left: 326px;
+  left: 600px;
   background-color: var(--color-whitesmoke-200);
   width: 338px;
-  height: 168px;
+  height: 280px;
 }
 .kasr-al-kababgi {
   margin-bottom: 5px;
@@ -229,7 +225,7 @@
 .kasr-al-kababgi-zooba-container {
   position: absolute;
   top: 433px;
-  left: 327px;
+  left: 600px;
   letter-spacing: 0.1px;
   line-height: 32px;
   color: var(--color-black);
