@@ -1,122 +1,34 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./story-telling-page.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Cagliostro:wght@400&display=swap"
-    />
-  </head>
-  <body>
-    <div class="storytelling-page">
-      <img class="background-icon1" alt="" src="/content/rabot/public/background2x.png" />
-
-      <div class="navbar-style-31">
-        <div class="navbar-toggler1">
-          <div class="navbar-toggler-icon1"></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="chatbot-mode-page.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <div id="header">
+            <h1>Chatbot</h1>
         </div>
-        <div class="collapse-navbar-collapse1">
-          <div class="form-group1">
-            <div class="input-group1">
-              <img
-                class="input-group-prepend-icon1"
-                alt=""
-                src="/content/rabot/public/inputgroupprepend.svg"
-              />
-
-              <div class="form-control1">
-                <div class="search1">Search</div>
-              </div>
+        <div id="chatbot">
+            <div id="conversation">
+                <div class="chatbot-message">
+                    <p class="chatbot-text">Hi! 👋 Ask the pharaoh!</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="navbar-nav1">
-          <div class="li6" id="liContainer">
-            <div class="a6">
-              <div class="link6">Home</div>
-            </div>
-          </div>
-          <div class="li7">
-            <div class="a6">
-              <div class="link6">About</div>
-            </div>
-          </div>
-          <div class="navbar-nav-item"></div>
-          <div class="li8" id="liContainer2">
-            <div class="a6">
-              <div class="link6">Exhibits</div>
-            </div>
-          </div>
-          <div class="li9" id="liContainer3">
-            <div class="a6">
-              <div class="link6">Ra'bot</div>
-            </div>
-          </div>
-          <div class="li10">
-            <div class="a10" id="aContainer">
-              <div class="link6">Entertainment</div>
-            </div>
-          </div>
-          <div class="li11" id="liContainer5">
-            <div class="a6">
-              <div class="link6">Contact</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img class="logo-1-icon1" alt="" src="/content/rabot/public/logo-12x.png" />
+            <form id="input-form">
+                <message-container>
+                    <input id="input-field" type="text" placeholder="Type your message here">
+                    <button id="submit-button" type="submit">
+                        <img class="send-icon" src="send-message.png" alt="">
+                    </button>
+                </message-container>
+            </form>
+        </div>  
     </div>
 
-    <script>
-      var liContainer = document.getElementById("liContainer");
-      if (liContainer) {
-        liContainer.addEventListener("click", function (e) {
-          window.location.href = "./index";
-        });
-      }
-      
-      var linkText = document.getElementById("linkText");
-      if (linkText) {
-        linkText.addEventListener("click", function (e) {
-          window.location.href = "./about-page";
-        });
-      }
-
-      var liContainer2 = document.getElementById("liContainer2");
-      if (liContainer2) {
-        liContainer2.addEventListener("click", function (e) {
-          window.location.href = "./exhibits-page";
-        });
-      }
-      
-      var liContainer3 = document.getElementById("liContainer3");
-      if (liContainer3) {
-        liContainer3.addEventListener("click", function (e) {
-          window.location.href = "./rabot-page";
-        });
-      }
-      
-      var aContainer = document.getElementById("aContainer");
-      if (aContainer) {
-        aContainer.addEventListener("click", function (e) {
-          window.location.href = "./nearby-ent-page";
-        });
-      }
-      
-      var liContainer5 = document.getElementById("liContainer5");
-      if (liContainer5) {
-        liContainer5.addEventListener("click", function (e) {
-          window.location.href = "./contact-page-page";
-        });
-      }
-      </script>
-  </body>
+    <script src="chatbot.js"></script>
+</body>
 </html>
