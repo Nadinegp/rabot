@@ -22,8 +22,8 @@ inputForm.addEventListener('submit', async function(event) {
     },
     body: JSON.stringify({ value: valueToSend }) // Send the value "video"
   })
-  .then(response => {
-    if (response.ok) {
+  .then(video => {
+    if (video.ok) {
       console.log('Value sent successfully!');
     } else {
       console.error('Failed to send value');
@@ -44,13 +44,13 @@ inputForm.addEventListener('submit', async function(event) {
   conversation.appendChild(message);
 
   try {
-    // Generate chatbot response
-    const response = await getValue();
+    // Generate chatbot video
+    const video = await getValue();
 
-    // Add chatbot response to conversation
+    // Add chatbot video to conversation
     message = document.createElement('div');
     message.classList.add('chatbot-message','chatbot');
-    message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${response}</p>`;
+    message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${video}</p>`;
     conversation.appendChild(message);
     message.scrollIntoView({behavior: "smooth"});
   } catch (error) {
@@ -72,11 +72,11 @@ async function getValue() {
 
 function getVariableFromPython() {
     return fetch('/get-variable')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
+        .then(video => {
+            if (!video.ok) {
+                throw new Error('Network video was not ok');
             }
-            return response.json();
+            return video.json();
         })
         .then(data => {
             return data.value;
