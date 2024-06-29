@@ -1,3 +1,17 @@
+.recognized-face {
+  position: absolute;
+  top: 320px; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--font-size-9xl);
+  color: var(--color-whitesmoke);
+  font-family: var(--font-cagliostro);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
 .background-icon2 {
   position: absolute;
   top: -33px;
