@@ -1,5 +1,5 @@
 // Get chatbot elements
-const chatbot = document.getElementById('chatbot');
+const chatbot = document.getElementById('chatbotv');
 const conversation = document.getElementById('conversation');
 const inputForm = document.getElementById('input-form');
 const inputField = document.getElementById('input-field');
@@ -11,27 +11,35 @@ inputForm.addEventListener('submit', async function(event) {
   // Get user input
   const input = inputField.value;
 
-  // Set the value to "video"
-  var valueToSend = "video";
 
-  // Make an HTTP POST request to the server
-  fetch('/send-value', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ value: valueToSend }) // Send the value "video"
-  })
-  .then(video => {
-    if (video.ok) {
-      console.log('Value sent successfully!');
-    } else {
-      console.error('Failed to send value');
-    }
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+  /* to send the value because its the only way */
+// Capture the value you want to send
+var valueToSend = "Hello from JavaScript!";
+
+// Make an HTTP POST request to the server
+fetch('/send-value', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ value: input })
+})
+.then(response => {
+  if (response.ok) {
+    console.log('Value sent successfully!');
+  } else {
+    console.error('Failed to send value');
+  }
+})
+.catch(error => {
+  console.error('Error:', error);
+});
+/********************************************************/
+/* so far we have recieved a value from user .. this will be used later because we need it in the model for further use
+>> now lets head to the important part which is the video display
+
+*/
+
 
   // Clear input field
   inputField.value = '';
@@ -43,14 +51,23 @@ inputForm.addEventListener('submit', async function(event) {
   message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${input}</p>`;
   conversation.appendChild(message);
 
-  try {
-    // Generate chatbot video
-    const video = await getValue();
 
-    // Add chatbot video to conversation
+/* here is where we start >> this area is suppose to get the value from the python which in the first case is a string but here in this case is a video 
+>> so where suppose to get the video and display it in the html*/
+
+  
+  try {
+    // Generate chatbot response
+   // const response = await getVariableFromPython();
+
+    // Add chatbot response to conversation
     message = document.createElement('div');
-    message.classList.add('chatbot-message','chatbot');
-    message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${video}</p>`;
+    message.classList.add('chatbot-message','chatbotv');
+    message.innerHTML = `<video controls>
+            <source src="/video" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>`;
+   // message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${response}</p>`;
     conversation.appendChild(message);
     message.scrollIntoView({behavior: "smooth"});
   } catch (error) {
@@ -59,41 +76,10 @@ inputForm.addEventListener('submit', async function(event) {
   }
 });
 
-async function getValue() {
-  try {
-    const variableValue = await getVariableFromPython();
-    console.log("Variable value:", variableValue);
-    return variableValue;
-  } catch (error) {
-    console.error('Error:', error);
-    throw error; // Rethrow the error to be caught by the event listener
-  }
-}
 
-function getVariableFromPython() {
-    return fetch('/get-variable')
-        .then(video => {
-            if (!video.ok) {
-                throw new Error('Network video was not ok');
-            }
-            return video.json();
-        })
-        .then(data => {
-            return data.value;
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            return ''; // Return an empty string or handle the error as needed
-        });
-}
 
-async function getValue() {
-  try {
-    const variableValue = await getVariableFromPython();
-    console.log("Variable value:", variableValue);
-    return variableValue; // Return the variable value
-  } catch (error) {
-    console.error('Error:', error);
-    throw error; // Rethrow the error to be caught by the event listener
-  }
-}
+
+
+
+
+
