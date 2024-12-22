@@ -41,6 +41,7 @@ Vector Database: For storing and managing user-specific data to improve query re
 
 
 Screenshots of the project
+
 ![image](https://github.com/user-attachments/assets/c2ef156e-820b-4f58-afc8-26ad4224bcde)
 
 Whole Pojrcte recorded:
