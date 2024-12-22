@@ -44,5 +44,5 @@ Screenshots of the project
 
 ![image](https://github.com/user-attachments/assets/c2ef156e-820b-4f58-afc8-26ad4224bcde)
 
-Whole Pojrcte recorded:
+Whole Project recorded:
 https://drive.google.com/file/d/1CnZ3_uBV9-0PVKVbUymtCfod6BwKEom2/view?t=2
